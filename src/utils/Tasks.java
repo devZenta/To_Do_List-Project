@@ -24,6 +24,18 @@ public class Tasks {
         history.add(new TaskVersion(name, description, state));
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Boolean getState() {
+        return state;
+    }
+
     public Boolean addTask(Tasks task) {
         tasks.add(task);
         System.out.println(name + " added, Description : " + description + ", State : " + state);
